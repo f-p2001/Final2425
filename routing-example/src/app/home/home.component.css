@@ -1,0 +1,85 @@
+/* Hero Section Styles */
+.hero {
+    background: linear-gradient(135deg, #e9de0a, #d4af37, #b89e28);
+    color: #000; /* Dark text color for contrast */
+    padding: 4rem 2rem; /* Padding for spacing */
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem; /* Large hero title */
+    font-weight: bold;
+    margin-bottom: 1rem; /* Spacing below title */
+}
+
+.hero p {
+    font-size: 1.5rem; /* Subtitle font size */
+}
+
+/* Carousel Styles */
+.carousel-inner img {
+    width: 100%; /* Ensures all images stretch to full width */
+    height: 400px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    border: 3px solid #e9de0a; /* Yellow border around carousel images */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #e9de0a; /* Yellow control icons */
+    border-radius: 50%; /* Circular controls */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #343a40; /* Light color on hover */
+}
+
+/* Gallery Styles */
+.gallery img {
+    width: 100%; /* Ensures all images stretch to full width */
+    height: 300px; /* Set a fixed height for uniformity */
+    object-fit: cover; /* Ensure images cover the area without distortion */
+    border: 3px solid #e9de0a; /* Yellow border around images */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+/* Section Headings */
+h2 {
+    color: #e9de0a; /* Yellow heading text */
+    font-size: 2.5rem; /* Larger font size */
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: bold;
+    margin-bottom: 2rem; /* Spacing below heading */
+}
+
+/* Container Padding */
+.container {
+    padding: 2rem 1rem; /* Padding for gallery container */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem; /* Smaller title on small screens */
+    }
+
+    .hero p {
+        font-size: 1.2rem; /* Adjusted subtitle font size */
+    }
+
+    .gallery img {
+        margin-bottom: 1rem; /* Extra spacing for stacked layout */
+    }
+
+    h2 {
+        font-size: 2rem; /* Adjust heading size for smaller screens */
+    }
+}

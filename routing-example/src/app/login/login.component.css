@@ -1,0 +1,122 @@
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: linear-gradient(135deg, #000000, #333333); /* Black gradient */
+    border-radius: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for the container */
+    overflow-y: auto;
+    height: 80rem;
+}
+
+/* Heading styling */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    color: #e9de0a; /* Gold color */
+    text-align: center;
+}
+
+/* Form Section */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Form Group Styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input Fields Styling */
+input.form-control {
+    padding: 1rem; /* Padding inside input fields */
+    font-size: 1rem; /* Font size for input text */
+    border: 2px solid #e9de0a; /* Gold border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #212529; /* Dark background for input fields */
+    color: #fff; /* White text color */
+    transition: border-color 0.3s ease-in-out; /* Smooth transition for border color */
+}
+
+/* Placeholder Styling */
+input.form-control::placeholder {
+    color: rgba(233, 222, 10, 0.7); /* Light gold color for placeholder */
+    opacity: 1; /* Ensure full opacity */
+    font-size: 0.9rem; /* Optional: Adjust font size for placeholder */
+}
+
+/* Focus State for Input Fields */
+input.form-control:focus {
+    outline: none; /* Remove default outline */
+    border-color: #d4af37; /* Lighter gold on focus */
+}
+
+/* Button Styling */
+button[type="submit"] {
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #e9de0a;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #d4af37;
+    transform: scale(1.05);
+}
+
+button[type="submit"]:focus {
+    outline: none;
+}
+
+/* Cancel Button */
+button[type="button"] {
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="button"]:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+}
+
+button[type="button"]:focus {
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    input.form-control,
+    button[type="submit"],
+    button[type="button"] {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+}

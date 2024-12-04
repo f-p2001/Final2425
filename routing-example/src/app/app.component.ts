@@ -29,6 +29,7 @@ import { CommonModule } from '@angular/common';
             NavbarComponent,
             FooterComponent,
             HomeComponent,
+            ServiceDetailsComponent
             
   ],
   templateUrl: './app.component.html',

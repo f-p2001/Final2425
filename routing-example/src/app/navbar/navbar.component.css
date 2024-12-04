@@ -1,38 +1,105 @@
-/* Style for Navbar */
+/* General Navbar Styles */
 .navbar {
-    background-color: #343a40; /* Dark background color */
+  padding: 1.5rem 2rem; /* Padding for the navbar */
+}
+
+/* Brand Styles */
+.navbar-brand {
+  font-size: 1.8rem; /* Brand font size */
+  font-weight: bold; /* Bold brand text */
+  color: #e9de0a; /* White color for brand */
+}
+
+/* Navbar Links */
+.nav-link {
+  font-size: 1.2rem; /* Font size for links */
+  color: #e9de0a; /* White color for links */
+  padding: 0.75rem 1rem; /* Padding for links */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.nav-link:hover {
+  color: #f8f9fa; /* Light color on hover */
+}
+
+/* Active Link Styles */
+.nav-link.active {
+  font-weight: bold; /* Bold active link */
+  border-bottom: 2px solid #e9de0a; /* Underline for active link */
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+  border: none; /* Remove border */
+  background-color: #e9de0a; /* Yellow background for the toggler button */
+  padding: 0.2rem; /* Add consistent padding */
+  border-radius: 5px; /* Optional: rounded corners for the toggler */
+  display: flex; /* Flexbox for aligning content */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  width: 3rem; /* Set a fixed width for consistency */
+  height: 2rem; /* Set a fixed height for consistency */
+}
+
+/* Toggler Icon */
+.navbar-toggler-icon {
+  background-image: none; /* Remove default toggler icon */
+  position: relative;
+  width: 2.5rem; /* Set width for the toggler icon */
+  height: 1.2rem; /* Set height for the toggler icon */
+}
+
+/* Toggler Icon Lines */
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon span {
+  content: "";
+  display: flex;
+  position: absolute;
+  height: 0.3rem; /* Thickness of the lines */
+  width: 100%; /* Full width for the lines */
+  background-color: #000; /* Black color for the lines */
+  transition: all 0.3s ease; /* Smooth transition for animations */
+  border-radius: 2px; /* Optional: rounded edges for the lines */
+}
+
+.navbar-toggler-icon::before {
+  top: 0; /* Position for the top line */
+}
+
+.navbar-toggler-icon::after {
+  bottom: 0; /* Position for the bottom line */
+}
+
+.navbar-toggler-icon span {
+  top: 50%; /* Position for the middle line */
+  transform: translateY(-50%); /* Center the middle line vertically */
+}
+
+.navbar-toggler {
+  margin-left: auto; /* Push toggler to the far right */
+}
+
+.navbar-brand {
+  margin-right: auto; /* Ensure brand stays on the left */
+}
+
+@media (min-width: 992px) {
+  .navbar-toggler {
+    display: none; /* Hide the toggler on larger screens */
   }
-  
-  .navbar .navbar-brand {
-    font-weight: bold;
-    color: #fff; /* White color for the brand */
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+      padding: 1rem; /* Reduced padding for smaller screens */
   }
-  
-  .navbar .navbar-nav .nav-link {
-    color: #fff !important; /* Ensure links are white */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+
+  .navbar-brand {
+      font-size: 1.5rem; /* Smaller brand font size */
   }
-  
-  .navbar .navbar-nav .nav-link:hover {
-    color: #ff6347 !important; /* Change to tomato red on hover */
+
+  .nav-link {
+      font-size: 1rem; /* Smaller link font size */
   }
-  
-  .navbar .navbar-nav.ml-auto {
-    margin-left: auto; /* Pushes the items to the right side */
-  }
-  
-  .navbar .navbar-nav .nav-item {
-    padding-left: 20px;
-  }
-  
-  /* If you want the Login button to have a special style, for example: */
-  .navbar .navbar-nav .nav-item:last-child .nav-link {
-    background-color: #007bff; /* Blue background for the Login button */
-    border-radius: 4px;
-    padding: 10px 15px;
-  }
-  
-  .navbar .navbar-nav .nav-item:last-child .nav-link:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-  }
-  
+}

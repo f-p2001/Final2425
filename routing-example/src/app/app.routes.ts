@@ -10,6 +10,7 @@ import { LeftComponent } from './left/left.component';
 import { RightComponent } from './right/right.component';
 import { Component, NgModule } from '@angular/core';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 export const routes: Routes = [
@@ -20,6 +21,11 @@ export const routes: Routes = [
     {path: '', 
         component: NavbarComponent,
         outlet: 'header'
+    },
+
+    {path: '', 
+        component: FooterComponent,
+        outlet: 'footer'
     },
 
     {path: '', 

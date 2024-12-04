@@ -1,23 +1,29 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms'; // Import FormsModule
 
-import { ServiceDetailsComponent } from './service-details.component';
+@Component({
+  selector: 'app-service-details',
+  standalone: true,
+  imports: [FormsModule],  // Add FormsModule here
+  templateUrl: './service-details.component.html',
+  styleUrls: ['./service-details.component.css']
+})
+export class ServiceDetailsComponent {
+  car: any = {
+    id: 1,
+    name: 'Rolls Royce Phantom',
+    description: 'Experience the pinnacle of luxury and sophistication.',
+    category: 'Luxury Sedan',
+    price: 2500 // Price per day
+  };
 
-describe('ServiceDetailsComponent', () => {
-  let component: ServiceDetailsComponent;
-  let fixture: ComponentFixture<ServiceDetailsComponent>;
+  saveCar() {
+    // Logic to save the car details
+    console.log('Car details saved', this.car);
+  }
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [ServiceDetailsComponent]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(ServiceDetailsComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+  cancel(): void {
+    // Logic for canceling, navigate back to car list or do something else
+    console.log('Action canceled');
+  }
+}

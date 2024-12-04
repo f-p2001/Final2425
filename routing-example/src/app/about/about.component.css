@@ -1,0 +1,75 @@
+/* About Page Styles */
+.about-container {
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, #e9de0a, #d4af37, #b89e28);
+    height: 84rem; /* Adjusted to auto to fit content */
+    color: #333; /* Set text color for all content */
+    text-align: justify; 
+}
+
+.about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #080808bc;
+    margin-bottom: 20px;
+    text-align: center; /* Center-align the title */
+}
+
+.about-text {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify; /* Justify text for readability */
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center; /* Center-align section titles */
+}
+
+.fleet-list ul,
+.services-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fleet-list li,
+.services-list li {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.fleet-list li:before,
+.services-list li:before {
+    content: "\2022";
+    color: #e9de0a;
+    margin-right: 10px;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 2rem; /* Smaller title on small screens */
+    }
+
+    .about-text {
+        font-size: 1rem; /* Smaller font for mobile */
+        line-height: 1.5; /* Reduced line-height on mobile */
+    }
+
+    .about-img {
+        max-height: 250px; /* Smaller image on mobile */
+    }
+
+    .fleet-list li,
+    .services-list li {
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
+}

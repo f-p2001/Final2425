@@ -1,0 +1,72 @@
+/* Container styling */
+.container {
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto;  /* Center container horizontally */
+    padding: 2rem;
+    background: linear-gradient(135deg, #000000, #333333); /* Black gradient */
+    border-radius: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for the container */
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: 80rem;
+}
+
+/* Heading styling */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    color: #e9de0a; /* Gold color */
+}
+
+/* Car Brands List */
+.car-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Space between each brand section */
+}
+
+/* Car Brand Section */
+.car-brand {
+    background-color: #212529;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-brand h3 {
+    font-size: 1.75rem;
+    color: #e9de0a; /* Gold color for the car brand */
+    margin-bottom: 1rem;
+}
+
+.car-brand ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.car-brand ul li {
+    font-size: 1.25rem;
+    color: #fff; /* White text for the car models */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .car-brand h3 {
+        font-size: 1.25rem;
+    }
+
+    .car-brand ul li {
+        font-size: 1.1rem;
+    }
+}
+
+

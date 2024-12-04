@@ -1,0 +1,89 @@
+/* Footer styling */
+footer {
+    background-color: #333;  /* Dark background for the footer */
+    color: #fff;  /* White text color */
+    padding-top: 30px;  /* Top padding */
+    padding-bottom: 30px;  /* Bottom padding */
+  }
+  
+  /* Styling for the containers inside the footer */
+  footer .container {
+    max-width: 1200px;  /* Limit the width of the container */
+    margin: 0 auto;  /* Center align the container */
+  }
+  
+  /* Styling for each section inside the footer (About Us, Popular Cars, Contact Us) */
+  footer .col-md-4 {
+    margin-bottom: 20px;  /* Add some space between sections */
+  }
+  
+  footer h5 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;  /* Space between title and content */
+    color: #e9de0a;  /* Gold color for titles */
+  }
+  
+  /* Styling for the About Us section text */
+  footer p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #bbb;  /* Lighter grey color for the body text */
+  }
+  
+  /* Styling for the list items (Popular Cars) */
+  footer ul.list-unstyled {
+    padding-left: 0;  /* Remove default padding */
+  }
+  
+  footer ul.list-unstyled li {
+    font-size: 14px;
+    color: #bbb;  /* Light grey for list items */
+    margin-bottom: 8px;  /* Space between items */
+  }
+  
+  footer ul.list-unstyled li:hover {
+    color: #e9de0a;  /* Change color to gold on hover */
+    cursor: pointer;
+  }
+  
+  /* Styling for the Contact Us section */
+  footer ul li p {
+    font-size: 14px;
+    color: #bbb;  /* Light grey color */
+  }
+  
+  footer ul li a {
+    color: #bbb;  /* Default color for links */
+    text-decoration: none;
+  }
+  
+  footer ul li a:hover {
+    color: #e9de0a;  /* Change link color to gold on hover */
+  }
+  
+  /* Bottom Row (Copyright) */
+  footer .bg-black {
+    background-color: #000;  /* Solid black background for copyright row */
+    color: #fff;  /* White text for the copyright */
+    font-size: 14px;  /* Smaller text size */
+    padding: 10px 0;  /* Padding for the bottom row */
+  }
+  
+  footer .bg-black p {
+    margin: 0;  /* Remove margin from paragraph */
+  }
+  
+  /* Media Query for Responsiveness */
+  @media (max-width: 768px) {
+    footer .row {
+      flex-direction: column;  /* Stack the columns vertically on smaller screens */
+      text-align: center;  /* Center text */
+    }
+  
+    footer .col-md-4 {
+      margin-bottom: 20px;  /* Add spacing between stacked sections */
+    }
+  }
+  

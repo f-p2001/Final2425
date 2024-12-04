@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #343a40; /* Dark background */
+    color: #e9de0a; /* Yellow text */
+    font-family: Arial, sans-serif; /* Clean, modern font */
+    max-height: 100rem;
+  }
+
+

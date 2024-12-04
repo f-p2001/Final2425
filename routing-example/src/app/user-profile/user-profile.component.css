@@ -1,0 +1,165 @@
+/* Container styling */
+.container {
+    max-width: 800px; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 2rem; /* Padding inside the container */
+    background: linear-gradient(135deg, #000000, #333333); /* Black gradient background */
+    border-radius: none; /* No border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for the container */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+    height: auto; /* Adjust height to fit content */
+}
+
+/* Style for the custom file input */
+.custom-file-upload {
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #e9de0a; /* Gold color for luxury feel */
+    color: white;
+    border: 2px solid #e9de0a;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+.custom-file-upload:hover {
+    background-color: #212529;; /* Darker gold on hover */
+    border-color: #212529;;
+}
+
+.custom-file-upload:active {
+    background-color: #e9de0a; /* Even darker gold when clicked */
+    border-color: #e9de0a;
+}
+
+/* Hide the default file input */
+#profileImage {
+    display: none;
+}
+
+/* Optional: Style the label text */
+.profile-image label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Optional: Adjust the container for the form group */
+.profile-image {
+    margin-bottom: 20px;
+}
+
+
+/* Heading styling */
+h2 {
+    font-size: 2rem; /* Font size for main heading */
+    font-weight: bold; /* Bold font weight */
+    text-transform: uppercase; /* Uppercase text */
+    margin-bottom: 1.5rem; /* Space below the heading */
+    color: #e9de0a; /* Gold color */
+    text-align: center; /* Center the heading */
+}
+
+/* Form Section */
+form {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 1.5rem; /* Space between form elements */
+}
+
+/* Form Group Styling */
+.form-group {
+    display: flex; /* Use flexbox for form groups */
+    flex-direction: column; /* Stack items vertically */
+}
+
+/* Input Fields Styling */
+/* Input Fields Styling */
+input.form-control {
+    padding: 1rem; /* Padding inside input fields */
+    font-size: 1rem; /* Font size for input text */
+    border: 2px solid #e9de0a; /* Gold border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #212529; /* Dark background for input fields */
+    color: #fff; /* White text color */
+    transition: border-color 0.3s ease-in-out; /* Smooth transition for border color */
+}
+
+/* Placeholder Styling */
+input.form-control::placeholder {
+    color: rgba(233, 222, 10, 0.7); /* Light gold color for placeholder */
+    opacity: 1; /* Ensure full opacity */
+    font-size: 0.9rem; /* Optional: Adjust font size for placeholder */
+}
+
+/* Focus State for Input Fields */
+input.form-control:focus {
+    outline: none; /* Remove default outline */
+    border-color: #d4af37; /* Lighter gold on focus */
+}
+
+/* Button Styling */
+button[type="submit"] {
+    padding: 1rem; /* Padding inside the button */
+    font-size: 1.2rem; /* Font size for button text */
+    background-color: #e9de0a; /* Gold background */
+    color: #000; /* Black text color */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and scale */
+}
+
+button[type="submit"]:hover {
+    background-color: #d4af37; /* Darker gold on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+button[type="submit"]:focus {
+    outline: none; /* Remove default outline */
+}
+
+/* Cancel Button */
+button[type="button"] {
+    padding: 1rem; /* Padding inside the button */
+    font-size: 1.2rem; /* Font size for button text */
+    background-color: #6c757d; /* Gray background */
+    color: #fff; /* White text color */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and scale */
+}
+
+button[type="button"]:hover {
+    background-color: #5a6268; /* Darker gray on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+button[type="button"]:focus {
+    outline: none; /* Remove default outline */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem; /* Adjust padding for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Smaller font size for heading */
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem; /* Space below form groups */
+    }
+
+    input.form-control,
+    button[type="submit"],
+    button[type="button"] {
+        font-size: 1rem; /* Smaller font size for inputs and buttons */
+        padding: 0.8rem; /* Adjust padding for smaller screens */
+    }
+}

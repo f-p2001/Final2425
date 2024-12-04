@@ -1,0 +1,81 @@
+.container-fluid {
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, #000000, #333333); /* Black gradient */
+    border-radius: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 80rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: #e9de0a; /* Gold color */
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: #212529;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.table th, .table td {
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.table th {
+    background-color: #333;
+    border-top: 1px solid #e9de0a; /* Gold border */
+}
+
+.table td {
+    background-color: #222;
+}
+
+.action-buttons .btn {
+    margin-right: 10px; /* Space between buttons */
+}
+
+.btn-gold {
+    background-color: #e9de0a; 
+    color: #000;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-gold:hover {
+    background-color: #d4af37; 
+    transform: scale(1.05); 
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+  
+    .btn-gold, .btn-secondary {
+        padding: 0.5rem 1rem;
+    }
+}

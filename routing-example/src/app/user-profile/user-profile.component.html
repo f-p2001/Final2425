@@ -1,1 +1,66 @@
-<p>user-profile works!</p>
+<div class="container mt-5">
+    <h2 class="text-center text-light">User  Profile</h2>
+    <form class="form">
+        <!-- Profile Image Section -->
+        <div class="profile-image form-group">
+            <label for="profileImage" class="text-white">Profile Image</label>
+            <input type="file" id="profileImage" name="profileImage" accept="image/*" class="form-control" style="display: none;">
+            <label for="profileImage" class="custom-file-upload">
+                Choose File
+            </label>
+        </div>
+  
+        <!-- Name Section -->
+        <div class="name-section">
+            <label for="firstName" class="text-white">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter First Name" class="form-control" >
+  
+            <label for="middleName" class="text-white">Middle Name</label>
+            <input type="text" id="middleName" name="middleName" placeholder="Enter Middle Name" class="form-control">
+  
+            <label for="lastName" class="text-white">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter Last Name" class="form-control">
+        </div>
+  
+        <!-- Mailing Address Section -->
+        <div class="address-section">
+            <h3 class="text-white">Mailing Address</h3>
+  
+            <label for="houseNumber" class="text-white">House #</label>
+            <input type="text" id="houseNumber" name="houseNumber" placeholder="Enter House #" class="form-control">
+  
+            <label for="street" class="text-white">Street</label>
+            <input type="text" id="street" name="street" placeholder="Enter Street" class="form-control">
+  
+            <label for="barangay" class="text-white">Barangay</label>
+            <input type="text" id="barangay" name="barangay" placeholder="Enter Barangay" class="form-control">
+  
+            <label for="city" class="text-white">City</label>
+            <input type="text" id="city" name="city" placeholder="Enter City" class="form-control">
+  
+            <label for="province" class="text-white">Province</label>
+            <input type="text" id="province" name="province" placeholder="Enter Province" class="form-control">
+        </div>
+  
+        <!-- Email Address Section -->
+        <div class="email-section">
+            <label for="email" class="text-white">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" class="form-control">
+        </div>
+  
+        <!-- Mobile Number Section -->
+        <div class="mobile-section">
+            <label for="mobileNumber" class="text-white">Mobile Number</label>
+            <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="Enter Mobile Number" class="form-control">
+        </div>
+  
+        <!-- Action Buttons -->
+        <div class="form-group">
+            <button type="submit" class="btn btn-gold w-100">Save Profile</button>
+        </div>
+
+        <div class="form-group">
+            <button type="button" class="btn btn-secondary w-100" onclick="cancel()">Cancel</button>
+        </div>
+    </form>
+</div>

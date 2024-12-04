@@ -1,1 +1,38 @@
-<p>service-details works!</p>
+<div class="container mt-5">
+    <h2 class="text-center text-light">Car Details</h2>
+    <form (ngSubmit)="saveCar()" class="form">
+      <div class="form-group">
+        <label for="carId">Car ID</label>
+        <input type="text" id="carId" class="form-control" [(ngModel)]="car.id" name="id" disabled>
+      </div>
+  
+      <div class="form-group">
+        <label for="carName">Car Name</label>
+        <input type="text" id="carName" class="form-control" [(ngModel)]="car.name" name="name" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="carDescription">Car Description</label>
+        <textarea id="carDescription" class="form-control" [(ngModel)]="car.description" name="description" rows="4" required></textarea>
+      </div>
+  
+      <div class="form-group">
+        <label for="carCategory">Car Category</label>
+        <input type="text" id="carCategory" class="form-control" [(ngModel)]="car.category" name="category" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="carPrice">Price / Day</label>
+        <input type="number" id="carPrice" class="form-control" [(ngModel)]="car.price" name="price" required>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" class="btn btn-success w-100">Save</button>
+      </div>
+  
+      <div class="form-group">
+        <button type="button" class="btn btn-secondary w-100" (click)="cancel()">Cancel</button>
+      </div>
+    </form>
+  </div>
+  

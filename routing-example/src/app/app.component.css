@@ -1,0 +1,15 @@
+/* Footer Section */
+.row.footer {
+    background-color: #222;  /* Dark background for the footer */
+    padding: 20px 0;  /* Padding for the footer */
+    margin-top: -10px;  /* Reduce the gap between the main content and footer */
+  }
+  
+  .footer .col-12 router-outlet {
+    display: block;  /* Ensure that the outlet takes up space */
+    background-color: #111;  /* Slightly darker background for footer */
+    padding: 15px;  /* Padding inside the footer */
+    color: #fff;  /* White text */
+    text-align: center;  /* Center the footer content */
+  }
+  
