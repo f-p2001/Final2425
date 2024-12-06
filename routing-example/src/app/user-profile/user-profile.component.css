@@ -7,7 +7,7 @@
     border-radius: none; /* No border radius */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect for the container */
     overflow-y: auto; /* Allow vertical scrolling if content overflows */
-    height: auto; /* Adjust height to fit content */
+    height: 96rem; /* Adjust height to fit content */
 }
 
 /* Style for the custom file input */

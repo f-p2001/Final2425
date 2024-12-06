@@ -1,85 +1,83 @@
-/* Hero Section Styles */
 .hero {
     background: linear-gradient(135deg, #e9de0a, #d4af37, #b89e28);
-    color: #000; /* Dark text color for contrast */
-    padding: 4rem 2rem; /* Padding for spacing */
+    color: #000; 
+    padding: 4rem 2rem; 
     text-align: center;
+    margin-top: 3rem;
 }
 
 .hero h1 {
-    font-size: 3rem; /* Large hero title */
+    font-size: 2.3rem; 
     font-weight: bold;
-    margin-bottom: 1rem; /* Spacing below title */
+    margin-bottom: 1rem; 
 }
 
 .hero p {
-    font-size: 1.5rem; /* Subtitle font size */
+    font-size: 1.5rem; 
 }
 
-/* Carousel Styles */
 .carousel-inner img {
-    width: 100%; /* Ensures all images stretch to full width */
-    height: 400px; /* Set a fixed height for all images */
-    object-fit: cover; /* Ensure images cover the area without distortion */
-    border: 3px solid #e9de0a; /* Yellow border around carousel images */
-    border-radius: 8px; /* Rounded corners */
+    width: 100%;
+    height: 28rem;
+    object-fit: cover; 
+    border: 3px solid #e9de0a; 
+    border-radius: 8px; 
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #e9de0a; /* Yellow control icons */
-    border-radius: 50%; /* Circular controls */
+    background-color: #e9de0a; 
+    border-radius: 50%; 
 }
 
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
-    background-color: #343a40; /* Light color on hover */
+    background-color: #343a40; 
 }
 
-/* Gallery Styles */
+
 .gallery img {
-    width: 100%; /* Ensures all images stretch to full width */
-    height: 300px; /* Set a fixed height for uniformity */
-    object-fit: cover; /* Ensure images cover the area without distortion */
-    border: 3px solid #e9de0a; /* Yellow border around images */
-    border-radius: 8px; /* Rounded corners */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+    width: 100%; 
+    height: 294px; 
+    object-fit: cover; 
+    border: 3px solid #e9de0a; 
+    border-radius: 8px;
+    transition: transform 0.1s, box-shadow 0.3s; 
 }
 
 .gallery img:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+    transform: scale(1.05); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-/* Section Headings */
+
 h2 {
-    color: #e9de0a; /* Yellow heading text */
-    font-size: 2.5rem; /* Larger font size */
-    text-transform: uppercase; /* Uppercase text */
+    color: #e9de0a; 
+    font-size: 2.5rem;
+    text-transform: uppercase;
     font-weight: bold;
-    margin-bottom: 2rem; /* Spacing below heading */
+    margin-bottom: 2rem;
 }
 
-/* Container Padding */
 .container {
-    padding: 2rem 1rem; /* Padding for gallery container */
+    padding: 2rem 1rem;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     .hero h1 {
-        font-size: 2rem; /* Smaller title on small screens */
+        font-size: 2rem; 
     }
 
     .hero p {
-        font-size: 1.2rem; /* Adjusted subtitle font size */
+        font-size: 1.2rem; 
     }
 
     .gallery img {
-        margin-bottom: 1rem; /* Extra spacing for stacked layout */
+        margin-bottom: 1rem; 
     }
 
     h2 {
-        font-size: 2rem; /* Adjust heading size for smaller screens */
+        font-size: 2rem;
     }
 }

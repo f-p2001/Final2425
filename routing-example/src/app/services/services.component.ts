@@ -14,6 +14,13 @@ export class ServicesComponent {
     { id: 1, name: 'Rolls Royce Phantom', category: 'Luxury Sedan' },
     { id: 2, name: 'Lamborghini Aventador', category: 'Sports Car' },
     { id: 3, name: 'Bentley Continental GT', category: 'Luxury Coupe' },
+    { id: 4, name: 'Ferrari 488 Spider', category: 'Convertible Sports Car' },
+    { id: 5, name: 'Maserati Quattroporte', category: 'Luxury Sedan' },
+    { id: 6, name: 'Porsche 911 Turbo S', category: 'High-Performance Sports Car' },
+    { id: 7, name: 'Aston Martin DB11', category: 'Grand Tourer' },
+    { id: 8, name: 'Bugatti Chiron', category: 'Hypercar' },
+    { id: 9, name: 'McLaren 720S', category: 'Supercar' },
+    { id: 10, name: 'Tesla Model S Plaid', category: 'Electric Performance Sedan' }
   ];
 
   deleteCar(carId: number): void {

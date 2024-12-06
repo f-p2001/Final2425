@@ -14,7 +14,7 @@ export class ServiceDetailsComponent {
     name: 'Rolls Royce Phantom',
     description: 'Experience the pinnacle of luxury and sophistication.',
     category: 'Luxury Sedan',
-    price: 2500 // Price per day
+    price: 25000 // Price per day
   };
 
   // Method to save car details

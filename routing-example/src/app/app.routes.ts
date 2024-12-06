@@ -11,6 +11,7 @@ import { RightComponent } from './right/right.component';
 import { Component, NgModule } from '@angular/core';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 
 export const routes: Routes = [
@@ -70,6 +71,11 @@ export const routes: Routes = [
 
     {path: 'userprofile', 
         component: UserProfileComponent,
+        title: 'user-profile page'
+    },
+
+    {path: '**', 
+        component: NotfoundComponent,
         title: 'user-profile page'
     }
 

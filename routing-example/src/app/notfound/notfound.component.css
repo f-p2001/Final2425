@@ -1,0 +1,67 @@
+/* 404 Hero Section Styles */
+.container{
+    height: 96rem;
+    background: linear-gradient(135deg, #e9de0a, #d4af37, #b89e28);
+}
+
+.hero {
+    margin-top: 3rem;
+    color: #000; /* Dark text color for contrast */
+    text-align: center;
+    padding: 2rem 2rem; /* Consistent padding */
+}
+
+.hero h1 {
+    font-size: 5rem; /* Larger title for emphasis */
+    font-weight: bold;
+    margin-bottom: 1rem; /* Spacing below title */
+}
+
+.hero p {
+    font-size: 1.5rem; /* Subtitle font size */
+}
+
+.hero .lead {
+    margin-top: 1rem; /* Spacing for the lead paragraph */
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.8); /* Softer text for lead */
+}
+
+/* Hero Section with Image */
+.hero img {
+    max-width: 400px; /* Limit the image size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 1rem; /* Spacing below the image */
+    border: 3px solid #e9de0a; /* Yellow border for consistency */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.hero img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+
+/* Button Styling for 404 Page */
+.btn-warning {
+    background-color: #e9de0a; /* Yellow button */
+    border: none; /* No border */
+    color: #000; /* Dark text */
+}
+
+.btn-warning:hover {
+    background-color: #d4af37; /* Slightly darker yellow on hover */
+    color: #212529 /* Light text on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem; /* Smaller title on small screens */
+    }
+
+    .hero p {
+        font-size: 1.2rem; /* Adjust subtitle font size */
+    }
+}
