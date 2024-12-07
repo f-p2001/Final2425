@@ -8,14 +8,16 @@ import { RegistrationComponent } from './registration/registration.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { ClassrecordComponent } from './classrecord/classrecord.component';
 import { EditComponent } from './edit/edit.component';
+import { ViewComponent } from './view/view.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'register', pathMatch: 'full' }, // Default redirect
   { path: 'register', component: RegistrationComponent, title: 'Register Page' },
   { path: 'profile', component: UserprofileComponent, title: 'Profile Page' },
   { path: 'record', component: ClassrecordComponent, title: 'Record Page' },
-  { path: 'edit', component: EditComponent, title: 'Edit Page' },
-  { path: 'service', component: ServiceComponent, title: 'Service Page' }, // Fixed typo: 'sevice' to 'service'
+  { path: 'service', component: ServiceComponent, title: 'Service Page' },
+  { path: 'view/:id', component: ViewComponent }, 
+  { path: 'edit/:id', component: EditComponent },// Fixed typo: 'sevice' to 'service'
 
   // Add routes for Header and Footer components, without 'outlet'
   { path: '', component: HeaderComponent }, // This renders HeaderComponent as the default

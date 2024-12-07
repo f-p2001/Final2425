@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgForOf } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-classrecord',
   standalone: true,
-  imports: [CommonModule, NgForOf], // Import NgForOf here
+  imports: [CommonModule, NgForOf, RouterLink], // Import NgForOf here
   templateUrl: './classrecord.component.html',
   styleUrls: ['./classrecord.component.css']
 })
