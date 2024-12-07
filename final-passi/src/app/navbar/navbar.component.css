@@ -1,0 +1,43 @@
+/* General Navbar Styling */
+.navbar {
+    background-color: #f8f9fa; /* Light background color */
+    border-bottom: 1px solid #eaeaea; /* Optional bottom border for definition */
+  }
+  
+  /* Navbar Items */
+  .navbar-nav .nav-item {
+    margin: 0 10px; /* Add spacing between items */
+  }
+  
+  .navbar-nav .nav-link {
+    color: #007bff; /* Default text color (Bootstrap primary) */
+    font-weight: 500; /* Slightly bold text */
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Hover and Active States */
+  .navbar-nav .nav-link:hover {
+    color: #0056b3; /* Darker blue on hover */
+    background-color: #e9ecef; /* Light gray background on hover */
+    border-radius: 5px; /* Rounded edges for hover effect */
+  }
+  
+  .navbar-nav .nav-link.active {
+    font-weight: bold;
+    color: #ffffff; /* White text for active link */
+    background-color: #007bff; /* Bootstrap primary color background */
+    border-radius: 5px; /* Rounded edges for active state */
+    padding: 5px 10px; /* Add padding for active link */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 10px;
+    }
+  
+    .navbar-nav .nav-item {
+      margin: 5px 0; /* Stack items for smaller screens */
+    }
+  }
+  

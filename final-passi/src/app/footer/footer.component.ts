@@ -1,12 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './footer.component.html',
-  styleUrl: './footer.component.css'
+  styleUrls: ['./footer.component.css']  // Corrected 'styleUrl' to 'styleUrls'
 })
 export class FooterComponent {
-
+  email = 'jane.smith@abc.edu';  // Corrected the property assignment
 }

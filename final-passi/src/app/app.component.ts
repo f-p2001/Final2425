@@ -14,18 +14,12 @@ import { ServiceComponent } from './service/service.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, 
-            RouterLink, 
-            RouterLinkActive,
+  imports: [RouterOutlet,
             CommonModule,
             ReactiveFormsModule,
-            HeaderComponent,
-            RegistrationComponent,
-            UserprofileComponent,
-            ClassrecordComponent,
-            FooterComponent,
-            EditComponent,
-            ServiceComponent],
+            HeaderComponent, 
+            FooterComponent
+            ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

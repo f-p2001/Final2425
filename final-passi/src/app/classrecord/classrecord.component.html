@@ -1,1 +1,25 @@
-<p>classrecord works!</p>
+<div class="container mt-4">
+    <h2>Class Record</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Activity Type</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students">
+          <td>{{ student.id }}</td>
+          <td>{{ student.name }}</td>
+          <td>{{ student.activity }}</td>
+          <td>
+            <button class="btn btn-info btn-sm" (click)="viewStudent(student)">View</button>
+            <button class="btn btn-warning btn-sm" (click)="editStudent(student)">Edit</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
