@@ -10,6 +10,7 @@ import { ClassRecordComponent} from './classrecord/classrecord.component';
 import { EditComponent } from './edit/edit.component';
 import { ViewComponent } from './view/view.component';
 
+
 export const routes: Routes = [
   { path: '', redirectTo: 'register', pathMatch: 'full' }, // Default redirect
   { path: 'register', component: RegistrationComponent, title: 'Register Page' },
@@ -21,7 +22,8 @@ export const routes: Routes = [
 
   // Add routes for Header and Footer components, without 'outlet'
   { path: '', component: HeaderComponent }, // This renders HeaderComponent as the default
-  { path: '', component: FooterComponent } // This renders FooterComponent as the default
+  { path: '', component: FooterComponent }
+  //{ path: '', component: ServiceComponent } // This renders FooterComponent as the default
 ];
 
 @NgModule({

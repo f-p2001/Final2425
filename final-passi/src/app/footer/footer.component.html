@@ -1,25 +1,25 @@
 <footer class="bg-light p-3 mt-5">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <h5>Contact</h5>
-            <p>Instructor: Jane Smith</p>
-            <p>School: ABC University</p>
-            <p>Email: {{ email }}</p> <!-- Use the email property -->
-            <p>Courses: Math, Science</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <h5>Consultation</h5>
-            <p>Schedule: Mon-Fri, 3 PM - 5 PM</p>
-            <button class="btn btn-primary">Set Appointment</button>
-          </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5>Contact</h5>
+          <p>Instructor: {{ instructor }}</p>
+          <p>School: ABC University</p> <!-- This should display the instructor's name -->
+          <p>Email: {{ instructorEmail }}</p> <!-- This will display the instructor's email -->
+          <p>Courses: {{ courses }}</p> <!-- This will display the instructor's courses -->
         </div>
       </div>
     </div>
-  </footer>
-  
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5>Consultation</h5>
+          <p>Schedule: Mon-Fri, 3 PM - 5 PM</p>
+          <button class="btn btn-primary">Set Appointment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+

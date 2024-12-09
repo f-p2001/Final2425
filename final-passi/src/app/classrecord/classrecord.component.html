@@ -31,11 +31,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <p><strong>ID:</strong> {{ selectedStudent?.id }}</p>
-            <p><strong>Name:</strong> {{ selectedStudent?.name }}</p>
-            <p><strong>Subject:</strong> {{ selectedStudent?.subject }}</p>
-            <p><strong>Activity:</strong> {{ selectedStudent?.activity }}</p>
-            <p><strong>Instructor:</strong> {{ selectedStudent?.instructor }}</p>
+            <app-view [student]="selectedStudent"></app-view> 
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
