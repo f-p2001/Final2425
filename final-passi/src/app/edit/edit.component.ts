@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router'; // Import ActivatedRoute for route parameters
+import { ActivatedRoute, RouterLinkActive } from '@angular/router'; // Import ActivatedRoute for route parameters
+import { ClassRecordComponent } from '../classrecord/classrecord.component';
 
 @Component({
   selector: 'app-edit',
   standalone: true,
-  imports: [CommonModule, FormsModule], // Import necessary modules
+  imports: [CommonModule, FormsModule, RouterLinkActive], // Import necessary modules
   templateUrl: './edit.component.html',
   styleUrls: ['./edit.component.css']
 })
