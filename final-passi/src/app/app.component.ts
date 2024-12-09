@@ -6,7 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
-import { ClassrecordComponent } from './classrecord/classrecord.component';
+import { ClassRecordComponent } from './classrecord/classrecord.component';
 import { FooterComponent } from './footer/footer.component';
 import { EditComponent } from './edit/edit.component';
 import { ServiceComponent } from './service/service.component';

@@ -6,7 +6,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ServiceComponent } from './service/service.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
-import { ClassrecordComponent } from './classrecord/classrecord.component';
+import { ClassRecordComponent} from './classrecord/classrecord.component';
 import { EditComponent } from './edit/edit.component';
 import { ViewComponent } from './view/view.component';
 
@@ -14,7 +14,7 @@ export const routes: Routes = [
   { path: '', redirectTo: 'register', pathMatch: 'full' }, // Default redirect
   { path: 'register', component: RegistrationComponent, title: 'Register Page' },
   { path: 'profile', component: UserprofileComponent, title: 'Profile Page' },
-  { path: 'record', component: ClassrecordComponent, title: 'Record Page' },
+  { path: 'record', component: ClassRecordComponent, title: 'Record Page' },
   { path: 'service', component: ServiceComponent, title: 'Service Page' },
   { path: 'view/:id', component: ViewComponent }, 
   { path: 'edit/:id', component: EditComponent },// Fixed typo: 'sevice' to 'service'

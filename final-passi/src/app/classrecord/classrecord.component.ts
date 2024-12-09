@@ -1,31 +1,35 @@
+import { CommonModule, NgForOf } from '@angular/common';
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { NgForOf } from '@angular/common';
 import { RouterLink } from '@angular/router';
 
+declare var bootstrap: any;
+
 @Component({
-  selector: 'app-classrecord',
-  standalone: true,
-  imports: [CommonModule, NgForOf, RouterLink], // Import NgForOf here
+  selector: 'app-class-record',
+  imports: [CommonModule, NgForOf, RouterLink],
   templateUrl: './classrecord.component.html',
   styleUrls: ['./classrecord.component.css']
 })
-export class ClassrecordComponent {
+export class ClassRecordComponent {
   students = [
-    { id: 1, name: 'John Doe', activity: 'Math' },
-    { id: 2, name: 'Jane Smith', activity: 'Science' },
-    // Add more students as needed
+    { id: 1, name: 'John Doe', subject: 'PE', activity: 'Basketball', additionalInfo: 'Captain of the team', instructor: 'Jack Sparrow' },
+    { id: 2, name: 'Jane Smith', activity: 'Debate', additionalInfo: 'Won regional competition', subject: 'Speech', instructor: 'Sarah Connor' },
+    { id: 3, name: 'Sam Wilson', activity: 'Music', additionalInfo: 'Plays the guitar', subject: 'Music', instructor: 'Tony Stark' }
   ];
 
-  constructor() {}
+  selectedStudent: any = null;
 
-  // Method to view student details
-  viewStudent(student: any): void {
-    console.log('View Student:', student);
-  }
-
-  // Method to edit student details
-  editStudent(student: any): void {
-    console.log('Edit Student:', student);
+  viewStudent(student: any) {
+    this.selectedStudent = student;  // Assign the clicked student to selectedStudent
+    console.log('Selected student:', this.selectedStudent);  // Log the selected student
+    const modalElement = document.getElementById('studentModal');
+    if (!modalElement) {
+      console.error('Modal element not found!');
+      return;
+    }
+    console.log('Modal element:', modalElement);
+    const bootstrapModal = new bootstrap.Modal(modalElement);
+    bootstrapModal.show();
   }
 }
+

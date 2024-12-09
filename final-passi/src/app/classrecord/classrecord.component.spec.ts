@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ClassrecordComponent } from './classrecord.component';
+import { ClassRecordComponent } from './classrecord.component';
 
-describe('ClassrecordComponent', () => {
-  let component: ClassrecordComponent;
-  let fixture: ComponentFixture<ClassrecordComponent>;
+describe('ClassRecordComponent', () => {
+  let component: ClassRecordComponent;
+  let fixture: ComponentFixture<ClassRecordComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ClassrecordComponent]
+      imports: [ClassRecordComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ClassrecordComponent);
+    fixture = TestBed.createComponent(ClassRecordComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

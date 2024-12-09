@@ -1,11 +1,16 @@
-import { Component } from '@angular/core';
+import { CommonModule, NgForOf } from '@angular/common';
+import { Component, Input } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-view',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './view.component.html',
-  styleUrl: './view.component.css'
+  styleUrls: ['./view.component.css']
 })
 export class ViewComponent {
+  @Input() student: any;
 
+  constructor() { }
 }
+
