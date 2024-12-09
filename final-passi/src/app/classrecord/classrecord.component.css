@@ -1,71 +1,127 @@
+/* Container Styling */
 .container {
-    margin-top: 40px;
+  background-color: #b8cdf2; /* Light blue background for the profile section */
+  padding: 2rem; /* Padding inside the container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the profile section */
+  margin-top: 2rem; /* Space from the top */
+  max-width: 800px; /* Limit the width for better readability */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Title Styling */
+h2 {
+  text-align: center;
+  color: #394755; /* Dark teal color for the title */
+  margin-bottom: 1.5rem; /* Space below the title */
+  font-size: 1.75rem;
+}
+
+/* Table Styling */
+.table {
+  width: 100%;
+  border-collapse: collapse; /* Collapse table borders */
+  margin-top: 1rem; /* Space from other elements */
+}
+
+.table th, .table td {
+  text-align: left;
+  padding: 1rem; /* Padding inside table cells */
+  border: 1px solid #eaeaea; /* Border around table cells */
+}
+
+.table th {
+  background-color: #394755; /* Dark teal background for headers */
+  color: white;
+}
+
+.table td {
+  background-color: #f9f9f9; /* Light gray background for table rows */
+}
+
+/* Button Styles inside Table */
+.btn {
+  font-size: 0.875rem; /* Small font size for buttons */
+  padding: 0.5rem 1rem; /* Padding for buttons */
+  border-radius: 5px; /* Rounded corners for buttons */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* View Button */
+.btn-info {
+  background-color: #17a2b8; /* Bootstrap info color */
+  color: white;
+}
+
+.btn-info:hover {
+  background-color: #138496; /* Darker shade on hover */
+}
+
+/* Edit Button */
+.btn-warning {
+  background-color: #ffc107; /* Bootstrap warning color */
+  color: white;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800; /* Darker shade on hover */
+}
+
+/* Modal Styling */
+.modal-content {
+  border-radius: 8px; /* Rounded corners for modal */
+  background-color: #ffffff; /* White background */
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for modal */
+}
+
+.modal-header {
+  border-bottom: 1px solid #eaeaea; /* Bottom border for modal header */
+}
+
+.modal-title {
+  color: #394755; /* Dark teal for the title */
+}
+
+.btn-close {
+  background: transparent;
+  border: none;
+  color: #394755;
+  font-size: 1.5rem;
+}
+
+.modal-footer {
+  border-top: 1px solid #eaeaea; /* Border between modal content and footer */
+}
+
+.modal-footer .btn-secondary {
+  background-color: #6c757d; /* Bootstrap secondary color */
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem 1.5rem;
+}
+
+.modal-footer .btn-secondary:hover {
+  background-color: #5a6268; /* Darker secondary color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  .container {
+    padding: 1.5rem; /* Less padding for small screens */
   }
-  
+
   h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2rem;
+    font-size: 1.5rem; /* Smaller title for smaller screens */
   }
-  
-  table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
+
+  .table th, .table td {
+    padding: 0.75rem; /* Reduced padding for smaller screens */
   }
-  
-  th, td {
-    padding: 12px;
-    text-align: left;
+
+  .btn {
+    font-size: 0.9rem; /* Slightly smaller buttons on small screens */
+    padding: 0.5rem 1rem;
   }
-  
-  th {
-    background-color: #f8f9fa;
-    color: #495057;
-  }
-  
-  tbody tr:hover {
-    background-color: #f1f1f1;
-  }
-  
-  button {
-    margin: 5px;
-  }
-  
-  .btn-info {
-    background-color: #17a2b8;
-    border-color: #17a2b8;
-  }
-  
-  .btn-info:hover {
-    background-color: #138496;
-    border-color: #117a8b;
-  }
-  
-  .btn-warning {
-    background-color: #ffc107;
-    border-color: #ffc107;
-  }
-  
-  .btn-warning:hover {
-    background-color: #e0a800;
-    border-color: #d39e00;
-  }
-  
-  .btn-sm {
-    padding: 5px 10px;
-  }
-  
-  table tbody tr td {
-    vertical-align: middle;
-  }
-  
-  @media (max-width: 767px) {
-    .table {
-      font-size: 14px;
-    }
-    .container {
-      padding: 10px;
-    }
-  }
-  
+}

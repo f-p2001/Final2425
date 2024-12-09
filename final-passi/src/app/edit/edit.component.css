@@ -1,0 +1,102 @@
+/* Container Styling */
+.container {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 2rem; /* Padding inside the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the container */
+    max-width: 800px; /* Limit the width for better readability */
+    margin-top: 2rem; /* Space from the top */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Title Styling */
+  h2 {
+    text-align: center;
+    color: #394755; /* Dark teal color for the title */
+    margin-bottom: 1.5rem; /* Space below the title */
+    font-size: 1.75rem;
+  }
+  
+  /* Back Button */
+ /* Back Button Styling */
+ .btn {
+    background-color: #394755; /* Set the background color to #394755 */
+    color: white; /* White text color */
+    border: 1px solid #394755; /* Border with the same color */
+    font-size: 1rem; /* Standard font size */
+    padding: 0.6rem 1rem; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+  }
+  
+  /* Back Button Hover Effect */
+  .btn:hover {
+    background-color: #2e3b47; /* Darker shade on hover */
+    border-color: #2e3b47; /* Darker border on hover */
+  }
+  
+  
+  /* Form Label Styling */
+  .form-label {
+    font-weight: bold;
+    color: #394755; /* Dark color for labels */
+  }
+  
+  /* Input Fields */
+  .form-control {
+    background-color: #ffffff; /* White background for inputs */
+    border: 1px solid #eaeaea; /* Light border around input fields */
+    border-radius: 5px; /* Rounded corners */
+    padding: 0.8rem 1.2rem; /* Padding inside input fields */
+    transition: border-color 0.3s ease; /* Smooth border transition */
+  }
+  
+  /* Input Focus Effect */
+  .form-control:focus {
+    border-color: #394755; /* Dark teal border on focus */
+    box-shadow: none;    /* Remove default focus outline */
+  }
+  
+  /* Save Button */
+  .btn-success {
+    background-color: #394755; /* Green background for save button */
+    color: white; /* White text */
+    border-radius: 5px; /* Rounded corners */
+    padding: 0.75rem 1.5rem; /* Padding for the button */
+    font-size: 1rem; /* Standard font size */
+    margin-top: 1rem; /* Space above the save button */
+    border: none;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+  }
+  
+  /* Save Button Hover Effect */
+  .btn-success:hover {
+    background-color: #394755; /* Darker green on hover */
+  }
+  
+  /* Spacing between form elements */
+  .mb-3 {
+    margin-bottom: 1.5rem; /* Add space between form groups */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 576px) {
+    .container {
+      padding: 1.5rem; /* Less padding for smaller screens */
+    }
+  
+    h2 {
+      font-size: 1.5rem; /* Smaller title for smaller screens */
+    }
+  
+    .form-control {
+      padding: 0.6rem 1rem; /* Less padding for form fields */
+    }
+  
+    .btn {
+      font-size: 0.9rem; /* Slightly smaller buttons on small screens */
+      padding: 0.5rem 1rem;
+    }
+  }
+  

@@ -1,0 +1,64 @@
+/* Footer Styling */
+footer.container { /* Dark teal background color for the container */
+    color: #ffffff; /* White text color for better contrast */
+    padding: 3rem 1rem; /* Padding inside the footer for spacing */
+    margin-top: 5rem; /* Space between the footer and previous content */
+  }
+  
+  /* Card Styling */
+  .card {
+    background-color: #ffffff; /* White background for the card */
+    color: #394755; /* Dark teal text color for card content */
+    border-radius: 5px; /* Rounded corners for the cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for the cards */
+  }
+  
+  .card-body {
+    padding: 1.5rem; /* Internal padding for the card */
+  }
+  
+  .card h5 {
+    font-size: 1.25rem; /* Font size for card titles */
+    margin-bottom: 1rem; /* Space below the title */
+  }
+  
+  .card p {
+    font-size: 1rem; /* Font size for paragraphs */
+    margin-bottom: 0.75rem; /* Space between paragraphs */
+  }
+  
+  /* Button Styling */
+  .card .btn {
+    background-color: #394755; /* Button background color */
+    color: #ffffff; /* White text for the button */
+    border-radius: 5px; /* Rounded button edges */
+    padding: 0.5rem 1.5rem; /* Button padding */
+    transition: background-color 0.3s ease;
+    margin-bottom: 4.1rem; /* Smooth transition for hover effect */
+  }
+  
+  .card .btn:hover {
+    background-color: #2d3b44; /* Darker shade of teal on hover */
+  }
+  
+  /* Ensure equal column size */
+  .row {
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+  }
+  
+  .col {
+    flex: 1;
+    padding: 0 10px; /* Add padding between the columns */
+  }
+  
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+  
+    .col {
+      margin-bottom: 1rem; /* Space between columns when stacked */
+    }
+  }
+  

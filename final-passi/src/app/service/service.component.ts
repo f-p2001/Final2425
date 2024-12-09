@@ -5,19 +5,33 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class ServiceComponent {
-  // Store instructor details
   private instructorSource = new BehaviorSubject<string>('');
-  private instructorEmailSource = new BehaviorSubject<string>('');
-  private coursesSource = new BehaviorSubject<string>(''); // Store courses
-
   currentInstructor = this.instructorSource.asObservable();
+
+  private instructorEmailSource = new BehaviorSubject<string>('');
   currentInstructorEmail = this.instructorEmailSource.asObservable();
+
+  private coursesSource = new BehaviorSubject<string>('');
   currentCourses = this.coursesSource.asObservable();
 
-  // Change instructor data
+  private consultationScheduleSource = new BehaviorSubject<string>('No schedule available');
+  currentConsultationSchedule = this.consultationScheduleSource.asObservable();
+
+  // Mapping of instructors to their consultation schedules
+  private instructorScheduleMap: { [key: string]: string } = {
+    'Jack Sparrow': 'Mon-Fri, 1 PM - 3 PM',
+    'Sarah Connor': 'Mon-Fri, 2 PM - 4 PM',
+    'Tony Stark': 'Mon-Fri, 3 PM - 5 PM',
+    // Add more instructors and their schedules as needed
+  };
+
   changeInstructor(instructor: string, email: string, courses: string) {
-    this.instructorSource.next(instructor);  // Change instructor name
-    this.instructorEmailSource.next(email);  // Change instructor email
-    this.coursesSource.next(courses);        // Change courses
+    this.instructorSource.next(instructor);
+    this.instructorEmailSource.next(email);
+    this.coursesSource.next(courses);
+    
+    // Update the consultation schedule based on the instructor
+    const schedule = this.instructorScheduleMap[instructor] || 'No schedule available'; // Default schedule
+    this.consultationScheduleSource.next(schedule);
   }
 }

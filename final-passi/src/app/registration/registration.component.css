@@ -1,0 +1,64 @@
+/* Registration Form Container */
+.container {
+    background-color: #b8cdf2; /* White background for the form container */
+    padding: 2rem; /* Padding inside the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow around the form */
+    max-width: 500px; /* Max width for the form */
+    margin: 2rem auto; /* Center the form horizontally */
+  }
+  
+  /* Title Styling */
+  h2 {
+    text-align: center;
+    color: #394755; /* Dark teal color for the title */
+    margin-bottom: 1.5rem; /* Space below the title */
+    font-size: 1.75rem;
+  }
+  
+  /* Form Fields */
+  .form-label {
+    font-size: 1rem; /* Label font size */
+    color: #394755; /* Dark teal color for the labels */
+  }
+  
+  .form-control {
+    border-radius: 5px; /* Rounded corners for form fields */
+    border: 1px solid #eaeaea; /* Light border color */
+    padding: 0.75rem; /* Padding inside the input fields */
+    font-size: 1rem; /* Input text size */
+    margin-bottom: 1rem; /* Space below each input */
+  }
+  
+  /* Focused Input Styling */
+  .form-control:focus {
+    border-color: #394755; /* Dark teal border on focus */
+    box-shadow: none; /* Subtle glow effect */
+  }
+  
+  /* Submit Button Styling */
+  .btn-primary {
+    background-color: #394755; /* Dark teal background for the button */
+    color: #ffffff; /* White text for the button */
+    border-radius: 5px; /* Rounded button edges */
+    padding: 0.75rem 1.5rem; /* Padding for the button */
+    width: 100%; /* Full width button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect for the button */
+  .btn-primary:hover {
+    background-color: #2d3b44; /* Darker teal color on hover */
+  }
+  
+  /* Responsive Design for Small Screens */
+  @media (max-width: 576px) {
+    .container {
+      padding: 1.5rem; /* Less padding for small screens */
+    }
+  
+    h2 {
+      font-size: 1.5rem; /* Smaller title font size for small screens */
+    }
+  }
+  
