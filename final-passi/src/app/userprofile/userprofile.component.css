@@ -1,84 +1,84 @@
-/* Container Styling */
+
 .container {
-    background-color: #b8cdf2; /* White background for the profile section */
-    padding: 2rem; /* Padding inside the container */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the profile section */
-    margin-top: 2rem; /* Space from the top */
-    max-width: 800px; /* Limit the width for better readability */
+    background-color: #b8cdf2; 
+    padding: 2rem; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-top: 2rem; 
+    max-width: 800px; 
     margin-left: auto;
     margin-right: auto;
   }
   
-  /* Title Styling */
+  
   h2 {
     text-align: center;
-    color: #394755; /* Dark teal color for the title */
-    margin-bottom: 1.5rem; /* Space below the title */
+    color: #394755; 
+    margin-bottom: 1.5rem;
     font-size: 1.75rem;
   }
   
-  /* List of Students */
+  
   .list-group {
     list-style-type: none;
-    padding-left: 0; /* Remove default padding */
+    padding-left: 0; 
   }
   
-  /* Individual List Item */
+  
   .list-group-item {
-    background-color: #f9f9f9; /* Light gray background for list items */
-    border: 1px solid #eaeaea; /* Border between list items */
-    margin-bottom: 1rem; /* Space between each item */
-    padding: 1rem; /* Padding inside the list item */
-    border-radius: 8px; /* Rounded corners */
+    background-color: #f9f9f9; 
+    border: 1px solid #eaeaea; 
+    margin-bottom: 1rem; 
+    padding: 1rem; 
+    border-radius: 8px;
   }
   
-  /* Buttons inside List Items */
+  
   .list-group-item .btn {
-    margin-top: 10px; /* Space above the button */
-    margin-right: 10px; /* Space between buttons */
+    margin-top: 10px; 
+    margin-right: 10px; 
   }
   
-  /* View Button */
+
   .btn-info {
-    background-color: #17a2b8; /* Bootstrap info color */
+    background-color: #17a2b8; 
     color: white;
     border-radius: 5px;
     padding: 0.5rem 1rem;
-    transition: background-color 0.3s ease; /* Smooth background change */
+    transition: background-color 0.3s ease; 
   }
   
   .btn-info:hover {
-    background-color: #138496; /* Darker shade on hover */
+    background-color: #138496; 
   }
   
-  /* Edit Button */
+  
   .btn-warning {
-    background-color: #ffc107; /* Bootstrap warning color */
+    background-color: #ffc107; 
     color: white;
     border-radius: 5px;
     padding: 0.5rem 1rem;
-    transition: background-color 0.3s ease; /* Smooth background change */
+    transition: background-color 0.3s ease; 
   }
   
   .btn-warning:hover {
-    background-color: #e0a800; /* Darker shade on hover */
+    background-color: #e0a800; 
   }
   
-  /* Modal Styling */
+
   .modal-content {
-    border-radius: 8px; /* Rounded corners for modal */
-    background-color: #ffffff; /* White background */
+    border-radius: 8px; 
+    background-color: #ffffff; 
     padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   }
   
   .modal-header {
-    border-bottom: 1px solid #eaeaea; /* Bottom border for modal header */
+    border-bottom: 1px solid #eaeaea; 
   }
   
   .modal-title {
-    color: #394755; /* Dark teal for the title */
+    color: #394755; 
   }
   
   .btn-close {
@@ -89,36 +89,36 @@
   }
   
   .modal-footer {
-    border-top: 1px solid #eaeaea; /* Border between modal content and footer */
+    border-top: 1px solid #eaeaea; 
   }
   
   .modal-footer .btn-secondary {
-    background-color: #6c757d; /* Bootstrap secondary color */
+    background-color: #6c757d;
     color: white;
     border-radius: 5px;
     padding: 0.5rem 1.5rem;
   }
   
   .modal-footer .btn-secondary:hover {
-    background-color: #5a6268; /* Darker secondary color on hover */
+    background-color: #5a6268;
   }
   
-  /* Responsive Design */
+  
   @media (max-width: 576px) {
     .container {
-      padding: 1.5rem; /* Less padding for small screens */
+      padding: 1.5rem;
     }
   
     h2 {
-      font-size: 1.5rem; /* Smaller title for smaller screens */
+      font-size: 1.5rem; 
     }
   
     .list-group-item {
-      padding: 0.75rem; /* Less padding for list items */
+      padding: 0.75rem; 
     }
   
     .btn {
-      font-size: 0.9rem; /* Slightly smaller buttons on small screens */
+      font-size: 0.9rem; 
       padding: 0.5rem 1rem;
     }
   }

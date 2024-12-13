@@ -4,7 +4,7 @@ import { ViewComponent } from '../view/view.component';
 import { ServiceComponent } from '../service/service.component';
 import { RouterModule } from '@angular/router';
 
-declare var window: any; // Declare window for Bootstrap modal
+declare var window: any; 
 
 @Component({
   selector: 'app-userprofile',

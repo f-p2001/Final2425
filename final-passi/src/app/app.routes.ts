@@ -18,12 +18,12 @@ export const routes: Routes = [
   { path: 'record', component: ClassRecordComponent, title: 'Record Page' },
   { path: 'service', component: ServiceComponent, title: 'Service Page' },
   { path: 'view/:id', component: ViewComponent }, 
-  { path: 'edit/:id', component: EditComponent },// Fixed typo: 'sevice' to 'service'
+  { path: 'edit/:id', component: EditComponent },
 
   // Add routes for Header and Footer components, without 'outlet'
-  { path: '', component: HeaderComponent }, // This renders HeaderComponent as the default
+  { path: '', component: HeaderComponent }, 
   { path: '', component: FooterComponent }
-  //{ path: '', component: ServiceComponent } // This renders FooterComponent as the default
+  
 ];
 
 @NgModule({
